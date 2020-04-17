@@ -1,0 +1,22 @@
+service: serverless-clojure-amazonica
+
+frameworkVersion: ">=1.67.3 <2.0.0"
+
+provider:
+  name: aws
+  runtime: java11
+  region: ${opt:region, 'eu-central-1'}
+  stage: ${opt:stage, 'dev'}
+  timeout: 60
+  iamRoleStatements:
+    - Effect: 'Allow'
+      Action: 's3:GetObject'
+      Resource: '*'
+
+package:
+  artifact: target/serverless-clojure-amazonica-0.1.0-SNAPSHOT-standalone.jar
+
+functions:
+  countLines:
+    description: Example Lambda showing how to read a file on S3 using Amazonica
+    handler: serverless_clojure_amazonica.handler::handle
