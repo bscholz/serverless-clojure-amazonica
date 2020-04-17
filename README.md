@@ -1,6 +1,6 @@
 # serverless-clojure-amazonica
 
-Example of an AWS Lambda function using Amazonica.
+Example of an AWS Lambda function using Clojure + Amazonica.
 
 ## Requirements
 
