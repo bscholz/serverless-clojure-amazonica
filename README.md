@@ -4,8 +4,8 @@ Example of an AWS Lambda function using Amazonica.
 
 ## Requirements
 
-* [leiningen](leiningen.org)
-* [serverless](serverless.com)
+* [leiningen](https://leiningen.org)
+* [serverless](https://serverless.com)
 
 ## Build
 
