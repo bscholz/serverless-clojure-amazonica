@@ -19,7 +19,7 @@
 
 (defn -handle
   "Counts the lines of the given s3 files.
-  Expects JSON input of the form {:files [{:bucket \"mybucket\", :key \"mykey\"}]}"
+  Expects JSON input of the form {\"files\": [{\"bucket\": \"mybucket\", \"key\": \"mykey\"}]}"
   [java-map-event]
   (let [event (clojurify java-map-event)
         {:keys [files]} event
