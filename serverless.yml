@@ -18,5 +18,5 @@ package:
 
 functions:
   countLines:
-    description: Example Lambda showing how to read a file on S3 using Amazonica
+    description: AWS Lambda example reading from S3 with Clojure + Amazonica
     handler: serverless_clojure_amazonica.handler::handle
